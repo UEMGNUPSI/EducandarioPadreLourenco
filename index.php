@@ -50,7 +50,7 @@
             <li><a href="">Quem Somos</a></li>
             <li><a href="">Missão</a></li>
             <li class="divisor" role="separator"></li>
-            <li><a href="funcoes/matriculas.php">Matricule-se</a></li>
+            <li><a href="">Matricule-se</a></li>
             <li><a href="">Entrar</a></li>
           </ul>          
         </div>
@@ -98,101 +98,132 @@
     </div>
     <!--Conteúdos-->
 
-    <section id="servicos" class="img img-responsive">
+    <section id="servicos">
+
+      <!-- container -->
       <div class="container">
+
+
+        <!-- row -->
         <div class="row">
-
-          <!--albuns-->
-          <div class="col-md-6" >
-
-           <div class="row albuns">
-            <div class="col-md-6">
-              <img src="imagens/img1.jpg" class="img-responsive img-circle">
-            </div>
-            <div class="col-md-6">
-             <img src="imagens/img2.jpg" class="img-responsive img-circle">
-           </div>        
-
-
-         </div><!--/row-->
-
-         <div class="row albuns">
-          <div class="col-md-6">
-            <img src="imagens/img3.jpg" class="img-responsive img-circle">
+          <div class="section-header text-center">
+            <h2>O que o Educandário Oferece?</h2>
+            <p class="lead">O Educandário Pe. Lourenço contribui em muitas atividades!</p>
           </div>
-          <div class="col-md-6">
-           <img src="imagens/img4.jpg" class="img-responsive img-circle">
-         </div>
+        </div>
 
-       </div><!--/row-->
-     </div>  
+        <!-- courses -->
+        <div id="courses-wrapper">
 
-     <!--serviços-->
-     <div class="col-md-6" >
-      <h2>O que o Educandário Oferece?</h2>
+          <!-- row -->
+          <div class="row">
 
-      <h3>Ensino</h3>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            <!-- single course -->
+            <div class="col-md-3 col-sm-6 col-xs-6">
 
-      <h3>Esporte</h3>
-      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <div class="course">
+                <a href="#" class="course-img">
+                  <img src="./imagens/img1.jpg" class="img-responsive img-rounded" style="width: 100%" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="#">Ação Social</a>
 
-      <h3>Aconselhamentos</h3>
-      <p>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+              </div>            
+
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+
+              <div class="course">
+                <a href="#" class="course-img">
+                  <img src="./imagens/img2.jpg" class="img-responsive img-rounded" style="width: 100%" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="#">Esporte</a>
+                
+              </div>            
+
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+
+              <div class="course">
+                <a href="#" class="course-img">
+                  <img src="./imagens/img3.jpg"  class="img-responsive img-rounded" style="width: 100%" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="#">Assistencia</a>
+
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-6">
+
+              <div class="course">
+                <a href="#" class="course-img">
+                  <img src="./imagens/img4.jpg" class="img-responsive img-rounded" style="width: 100%" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="#">Ensino Regular</a>
+
+              </div> 
+
+
+
+            </div>
+
+          </div>     
+        </div>
+
+      </div>
     </div>
-
-  </div>
-
-</div>
-
-</section>
-
-<section id="recursos">
+  </section>
 
 
-  <div class="container">
+  <section id="recursos">
 
-    <div class="row">
 
-      <!--recursos-->
-      <div class="col-md-6" >
-       <h2>Contato:</h2>
+    <div class="container">
 
-       <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Nome:</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome">
-          
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Email:</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite seu email">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Assunto:</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Qual o assunto?">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Mensagem:</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
-    </div>
+      <div class="row">
 
-    <div class="col-md-6">
-      <div id="mapid" style="width: 600px; height: 400px;"></div>
-      <script>
-        var mymap = L.map('mapid').setView([-20.034149989763, -48.940998652577], 15);
+        <!--recursos-->
+        <div class="col-md-6" >
+         <h2>Contato:</h2>
 
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-          maxZoom: 18,
-          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-          '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-          'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-          id: 'mapbox.streets'
-        }).addTo(mymap);
+         <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nome:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome">
+
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Email:</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite seu email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Assunto:</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Qual o assunto?">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mensagem:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <div id="mapid" style="width: 600px; height: 400px;"></div>
+        <script>
+          var mymap = L.map('mapid').setView([-20.034149989763, -48.940998652577], 15);
+
+          L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            id: 'mapbox.streets'
+          }).addTo(mymap);
        //adiciona um marcador com legenda
        L.marker([-20.034149989763, -48.940998652577]).addTo(mymap)
        .bindPopup("<b>Educandário</b>").openPopup();
@@ -244,23 +275,21 @@
       <h4>Links úteis</h4>
       <ul class="nav">
         <li><a href="#">Ajuda</a></li>
-        <li><a href="#">Faça-nos uma visita</li>
-         <li><a href="#">Contatos úteis</li>
+        <li><a href="#">Faça-nos uma visita</a></li>
+         <li><a href="#">Contatos úteis</a></li>
 
          </ul>            
        </div>
 
        <div class="col-md-4 ">
-         <ul class="nav ">
-          <li class="item-rede-social"><a href=""><img src="imagens/facebook.png""></a></li>
-          <li class="item-rede-social"><a href=""><img src="imagens/twitter.png"></a></li>
-          <li class="item-rede-social"><a href=""><img src="imagens/instagram.png"></a></li>                  
+        <ul class="nav">
+          <li class="item-rede-social"><a href="#"><img src="imagens/facebook.png"></a></li>
+          <li class="item-rede-social"><a href="#"><img src="imagens/twitter.png"></a></li>
+          <li class="item-rede-social"><a href="#"><img src="imagens/instagram.png"></a></li>             
         </ul>            
       </div>          
     </div><!--/row--> 
-
   </div>
-
 </footer>
 
 
