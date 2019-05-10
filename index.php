@@ -1,99 +1,107 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Educandário Padre Lourenço</title>
-  <link rel="icon"  href="imagens/logo.png">
+    <title>Educandário Padre Lourenço</title>
+    <link rel="icon"  href="imagens/logo.png">
 
-  <!-- Bootstrap -->
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="estilo.css" rel="stylesheet">
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Bootstrap -->
+    <link href="estilo.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
 
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script> 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
   </head>
   <body>
 
-    <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
-      <div class="container">
+    <nav class="navbar fixed-top navbar-inverse navbar-transparente  navbar-dark navbar-expand-lg">
+      <a href="#" class="navbar-brand">
+        <span class="img-logo">Padre Lourenço</span>
+      </a>         
+      <!--Botão toggle-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="margin-right: 15px">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!--header-->
-        <div class="navbar-header">
+      <!--navbar-->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
-          <!--Botão toggle-->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
-            <span class="sr-only">Alternar Navegação</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+        <ul class="navbar-nav ml-md-auto">
+          <li class="nav-item active">
+            <a href="" class="nav-link">Quem Somos</a>
+          </li>  
+          <li class="nav-item">
+            <a href="#" class="nav-link">Missão</a>
+          </li>
 
-          <a href="index.php" class="navbar-brand">
-            <span class="img-logo">Padre Lourenço</span>
-          </a>          
-        </div>
-
-        <!--navbar-->
-        <div class="collapse navbar-collapse" id="barra-navegacao">
-
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="">Quem Somos</a></li>
-            <li><a href="">Missão</a></li>
-            <li class="divisor" role="separator"></li>
-            <li><a href="">Matricule-se</a></li>
-            <li><a href="">Entrar</a></li>
-          </ul>          
-        </div>
-        
-      </div><!--container-->
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="formularioMenu" data-toggle="dropdown" area-haspopup="true" area-expanded="false">Formulários</a>
+            <div class="dropdown-menu">
+              <a href="funcoes/matriculas.php" class="dropdown-item text-dark">Matrícula</a>
+              <a href="#" class="dropdown-item text-dark">Rematrícula</a>
+              <a href="#" class="dropdown-item text-dark">Lista</a>
+            </div>
+          </li>
+        </ul>          
+      </div>
     </nav> <!--nav-->
-
     <div class="capa img-responsive">
-      <div class="texto-capa">
 
-        <div class="container padding-0 banners-home">
-          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+      <div class="texto-capa">
+        <h1>Educandário Padre Lourenço</h1>
+        <div class="container     padding-0 banners-home">
+          <div id="myCarousel2" class="carousel slide carousel-fade" data-ride="carousel" style="border:1px solid #000;">
             <ol class="carousel-indicators">
               <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel2" data-slide-to="1"></li>
               <li data-target="#myCarousel2" data-slide-to="2"></li>
             </ol>
-            <div id="banners-mobile" class="carousel-inner" role="listbox">
-              <div class="item active">
+            <div id="banners-mobile" class="carousel-slide" role="listbox">
+              <div class="carousel-item active">
                 <img src="imagens/carrocel1.jpg" class="d-block w-100 img-responsive" alt="Banner 1">
+                <div  class="carousel-caption d-none d-md-block">
+                  <p class="lead carousel-legend" style="color: white">Ensino regular</p>
+                </div>
               </div>
-              <div class="item">
+              <div class="carousel-item">
                 <img src="imagens/carrocel2.jpg" class="d-block w-100 img-responsive" alt="Banner 3">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="lead carousel-legend" style="color: white">Assistência</p>
+                </div>
               </div>
-              <div class="item">
+              <div class="carousel-item">
                 <img src="imagens/carrocel3.jpg" class="d-block w-100 img-responsive" alt="Banner 5">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="lead carousel-legend" style="color: white">Crianças Felizes</p>
+                </div>
               </div>
             </div>
             <!-- Controles -->
-            <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <a class="carousel-control-prev" href="#myCarousel2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon aria-hidden="true"></span>
               <span class="sr-only">Anterior</span>
             </a>
-            <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <a class="carousel-control-next" href="#myCarousel2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Próxima</span>
             </a>
           </div>
 
         </div>
-        <h1>Educandário Padre Lourenço</h1>
-        <a href="" class="btn btn-custom btn-roxo btn-lg"><span class="glyphicon glyphicon-usd"></span> Faça sua Doação</a>
-
+        <a href="" class="btn btn-custom btn-roxo btn-lg" style="margin-top: 20px; margin-bottom: -10px"><span></span> Faça sua Doação</a>
       </div>
     </div>
     <!--Conteúdos-->
@@ -106,14 +114,13 @@
 
         <!-- row -->
         <div class="row">
-          <div class="section-header text-center">
+          <div class="col-md-12 text-center" style="margin-bottom: -70px">
             <h2>O que o Educandário Oferece?</h2>
             <p class="lead">O Educandário Pe. Lourenço contribui em muitas atividades!</p>
           </div>
         </div>
 
-        <!-- courses -->
-        <div id="courses-wrapper">
+        <div class="py-5 bg-light card-group ">
 
           <!-- row -->
           <div class="row">
@@ -121,61 +128,71 @@
             <!-- single course -->
             <div class="col-md-3 col-sm-6 col-xs-6">
 
-              <div class="course">
-                <a href="#" class="course-img">
-                  <img src="./imagens/img1.jpg" class="img-responsive img-rounded" style="width: 100%" alt="">
-                  <i class="course-link-icon fa fa-link"></i>
-                </a>
-                <a class="course-title" href="#">Ação Social</a>
+              <div class="card box-shadow mt-4 bg-transparent border-primary">
+                <img class="card-img-top" src="./imagens/img1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text" style="max-height: 130px">O educandário conta com ação social, você não paga mensalidade para deixar seus filhos nele, e dispõe de várias atividades educativas.</p>
+                  <div class="card-footer bg-transparent">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-primary">Ver mais</button>
+                    </div>
+                  </div>
 
+                </div>   
               </div>            
 
             </div>
             <div class="col-md-3 col-sm-6 col-xs-6">
+             <div class="card  box-shadow mt-4 bg-transparent border-primary">
+              <img class="card-img-top" src="./imagens/img2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">As crianças têm diversas atividades de lazer, para passarem o tempo e se divertirem, tudo com bastante qualidade.</p>
 
-              <div class="course">
-                <a href="#" class="course-img">
-                  <img src="./imagens/img2.jpg" class="img-responsive img-rounded" style="width: 100%" alt="">
-                  <i class="course-link-icon fa fa-link"></i>
-                </a>
-                <a class="course-title" href="#">Esporte</a>
-                
-              </div>            
+                <div class="card-footer bg-transparent">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-primary">Ver mais</button>
+                  </div>
+                </div>
 
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-6">
+              </div>    
+            </div>   
 
-              <div class="course">
-                <a href="#" class="course-img">
-                  <img src="./imagens/img3.jpg"  class="img-responsive img-rounded" style="width: 100%" alt="">
-                  <i class="course-link-icon fa fa-link"></i>
-                </a>
-                <a class="course-title" href="#">Assistencia</a>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6">
+
+            <div class="card box-shadow mt-4 bg-transparent border-primary">
+              <img class="card-img-top" src="./imagens/img3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">O educandário também oferece assistência, não se preocupe com problemas, iremos sempre lhes informar sobre qualquer coisa.</p>
+                <div class="card-footer bg-transparent">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-primary">Ver mais</button>
+                  </div>
+                </div>
 
               </div>
             </div>
+          </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-6">
-
-              <div class="course">
-                <a href="#" class="course-img">
-                  <img src="./imagens/img4.jpg" class="img-responsive img-rounded" style="width: 100%" alt="">
-                  <i class="course-link-icon fa fa-link"></i>
-                </a>
-                <a class="course-title" href="#">Ensino Regular</a>
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="card box-shadow  mt-4 bg-transparent border-primary">
+              <img class="card-img-top" src="./imagens/img4.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Os professores são super dedicados, sempre dão o máximo de atenção ao seu filho, contribuindo para o seu aprendizado e crescimento.</p>
+                <div class="card-footer bg-transparent">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-primary">Ver mais</button>
+                  </div>
+                </div>
 
               </div> 
-
-
-
             </div>
-
           </div>     
         </div>
-
       </div>
     </div>
   </section>
+
 
 
   <section id="recursos">
@@ -212,8 +229,8 @@
         </form>
       </div>
 
-      <div class="col-md-6">
-        <div id="mapid" style="width: 600px; height: 400px;"></div>
+      <div class="col-md-6 text-center">
+        <div id="mapid" style="width: 100%px; height: 400px;" class="mt-5"></div>
         <script>
           var mymap = L.map('mapid').setView([-20.034149989763, -48.940998652577], 15);
 
@@ -224,80 +241,21 @@
             'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
             id: 'mapbox.streets'
           }).addTo(mymap);
-       //adiciona um marcador com legenda
-       L.marker([-20.034149989763, -48.940998652577]).addTo(mymap)
-       .bindPopup("<b>Educandário</b>").openPopup();
-     //adicionando um círculo a uma região
-     L.circle([-20.034149989763, -48.940998652577], 200, {
-      color: 'red',
-      fillColor: '#f03',
-      fillOpacity: 0.5
-    }).addTo(mymap).bindPopup("Esta é uma área que pode ser definida. Neste caso um raio de 200m");
-  </script>
-</div>    
+         //adiciona um marcador com legenda
+         L.marker([-20.034149989763, -48.940998652577]).addTo(mymap)
+         .bindPopup("<b>Educandário</b>").openPopup();
+       //adicionando um círculo a uma região
+       L.circle([-20.034149989763, -48.940998652577], 200, {
+        color: 'red',
+        fillColor: '#f03',
+        fillOpacity: 0.5
+      }).addTo(mymap).bindPopup("Esta é uma área que pode ser definida. Neste caso um raio de 200m");
+    </script>
+  </div>    
 </div>         
 </section>
 
-<!--rodapé-->
+<?php include 'funcoes/footer.php'; ?>
 
-<footer id="rodape">
-  <div class="container">
-
-    <div class="row">
-
-      <div class="col-md-2">
-
-       <span class="img-logo"></span>
-
-     </div>
-
-
-     <div class="col-md-2">
-      <h4>Educandário</h4>
-      <ul class="nav">
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Missão</a></li>
-        <li><a href="#">Nossa História</a></li>
-
-      </ul>            
-    </div>
-
-    <div class="col-md-2">
-      <h4>Comunidades</h4>
-      <ul class="nav">
-        <li><a href="#">Irmãs Carmelitas</a></li>
-        <li><a href="#">Desenvolvedores</a></li>
-        <li><a href="#">Marcas</a></li>                      
-      </ul>            
-    </div>
-
-    <div class="col-md-2">
-      <h4>Links úteis</h4>
-      <ul class="nav">
-        <li><a href="#">Ajuda</a></li>
-        <li><a href="#">Faça-nos uma visita</a></li>
-         <li><a href="#">Contatos úteis</a></li>
-
-         </ul>            
-       </div>
-
-       <div class="col-md-4 ">
-        <ul class="nav">
-          <li class="item-rede-social"><a href="#"><img src="imagens/facebook.png"></a></li>
-          <li class="item-rede-social"><a href="#"><img src="imagens/twitter.png"></a></li>
-          <li class="item-rede-social"><a href="#"><img src="imagens/instagram.png"></a></li>             
-        </ul>            
-      </div>          
-    </div><!--/row--> 
-  </div>
-</footer>
-
-
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

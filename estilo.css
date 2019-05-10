@@ -2,7 +2,7 @@
 *
 *
 /*=================Layout=============== */
-html, body, .capa{
+html, body, .capa {
 	height: 100%;
 }
 body{
@@ -38,11 +38,10 @@ nav.navbar-transparente{
 	padding: 5px 15px;
 
 }
-.divisor{
-	width: 1px;
-	height: 16px;
-	background: white;
-	margin: 16px 10px;
+.carousel-legend{
+	padding: 10px 0px;
+	background: rgba(0, 0, 0, 0.4);
+
 }
 
 .navbar-inverse .navbar-nav>li>a, footer .nav a{
@@ -60,7 +59,7 @@ nav.navbar-transparente{
 	
 	display: table;
 	width: 100%;
-	margin-top: 5em;
+	margin-top: 2em;
 
 }
 .texto-capa{
@@ -111,10 +110,6 @@ nav.navbar-transparente{
 	padding-bottom: 30px;
 }
 
-.albuns{
-	padding: 20px 0px 20px 0px;
-}
-
 /*===============Recursos=====================*/
 
 #recursos{
@@ -133,13 +128,10 @@ footer{
 	position: relative;
 }
 
-.item-rede-social{
-	float: right;
-}
 
 /*===============Tipografia=====================*/
 h1{
-	font-size: 5em;
+	font-size: 3em;
 	font-weight: 900;
 	letter-spacing: -0.08em;
 	margin-bottom: 30px;
@@ -150,6 +142,7 @@ h2{
 	font-size: 50px;
 	font-weight: 700;
 	letter-spacing: -0.04em;
+	text-align: center
 }
 h3{
 	font-size: 35px;
@@ -170,4 +163,20 @@ h3{
 	color: #6D638F;
 	font-size: 12px;
 	text-transform: uppercase;
+}
+
+.card-group p
+{
+
+	max-height: 120px;
+	min-height: 120px;
+}
+.navbar-nav a
+{
+
+		color:white;
+}
+.navbar-nav  a:hover
+{
+		color: #6D638F;
 }
