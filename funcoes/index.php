@@ -41,10 +41,10 @@
 
         <ul class="navbar-nav ml-md-auto">
           <li class="nav-item active">
-            <a href="" class="nav-link">Quem Somos</a>
+            <a href="quem_somos.php" class="nav-link">Quem Somos</a>
           </li>  
           <li class="nav-item">
-            <a href="#" class="nav-link">Missão</a>
+            <a href="missao.php" class="nav-link">Missão</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -204,28 +204,17 @@
         <!--recursos-->
         <div class="col-md-6" >
          <h2>Contato:</h2>
+         <br>
 
-         <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Nome:</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu nome">
-
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Email:</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite seu email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Assunto:</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Qual o assunto?">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Mensagem:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+          <h4 style="font-size: 20px">Endereço:</h4>
+          <p>Rua Silviano Brandão Nº 935, Princesa Isabel, Frutal-MG</p>
+          <h4 style="font-size: 20px">Horário de Funcionamento:</h4>
+          <p>Segunda a Sexta das 07h às 18h30min</p>
+          <h4 style="font-size: 20px">Telefone:</h4>
+          <p>Fax: (34) 3421-8924</p>
+          <h4 style="font-size: 20px">E-mail:</h4>
+          <p>educandariopadrelourenco@hotmail.com</p>
+        
       </div>
 
       <div class="col-md-6 text-center">
