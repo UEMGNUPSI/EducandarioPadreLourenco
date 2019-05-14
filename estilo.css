@@ -59,7 +59,7 @@ nav.navbar-transparente{
 	
 	display: table;
 	width: 100%;
-	margin-top: 2em;
+	margin-top: 5em;
 
 }
 .texto-capa{
@@ -100,6 +100,10 @@ nav.navbar-transparente{
 .btn-branco:hover{
 	background-color:white;
 	color: black;
+}
+
+.albuns{
+	padding: 10px 0px 10px 0px;
 }
 
 /*===============Seção Serviços=====================*/

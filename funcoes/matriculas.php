@@ -35,7 +35,7 @@
 
         <ul class="navbar-nav ml-md-auto">
           <li class="nav-item active">
-            <a href="" class="nav-link">Quem Somos</a>
+            <a href="../quem_somos.php" class="nav-link">Quem Somos</a>
           </li>  
           <li class="nav-item">
             <a href="#" class="nav-link">Missão</a>
@@ -54,40 +54,40 @@
     </nav> <!--nav-->
 		<div class="container" style="margin-top: 58px; margin-bottom: 50px">
 
-			<div class="row ">
+			<div class="row  capa">
 				<div class="col-12 text-center my-2">
 					<h1 style="font-weight: 330;"><i class="fa fa-file-pdf text-primary mr-3" aria-hidden="true"></i>Matricule-se aqui!</h1>
 				</div>
 				<div class="container">
 					<form>
 						<div class="form-row ">
-							<div class="form-group col-md-9 col-6">
+							<div class="form-group col-md-9 col-12">
 								<label for="nomeResp">Nome do responsável</label>
 								<input type="text" class="form-control" id="nomeResp" placeholder="">
 							</div>
-							<div class="form-group col-md-3 col-6">
+							<div class="form-group col-md-3 col-12">
 								<label for="cpfResp">CPF</label>
 								<input type="text" class="form-control" id="cpfResp" placeholder="">
 							</div>
 						</div>
 
 						<div class= "form-row">
-							<div class="form-group col-md-6">
+							<div class="form-group col-md-6 col-12">
 								<label for="parentesco">Grau de parentesco</label>
 								<input type="text" class="form-control" id="parentesco" placeholder="">
 							</div>
-							<div class="form-group col-md-3">
+							<div class="form-group col-md-3 col-12">
 								<label for="estadoCivil">Estado civil</label>
 								<input type="text" class="form-control" id="estadoCivil" placeholder="">
 							</div>
-							<div class="form-group col-md-3">
+							<div class="form-group col-md-3 col-12">
 								<label for="inputRg">RG</label>
 								<input type="text" class="form-control" id="inputRg">
 							</div>
 
 						</div>
 						<div class = "form-row">
-							<div class="form-group col-md-4">
+							<div class="form-group col-md-4 col-12">
 								<label for="inputTelefone">Telefone Residencial</label>
 								<input type="tel" class="form-control" id="inputTelefone">
 							</div>
