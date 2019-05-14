@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Educandário Padre Lourenço</title>
-    <link rel="icon"  href="imagens/logo.png">
+    <link rel="icon"  href="../imagens/logo.png">
 
     <!-- Bootstrap -->
-    <link href="estilo.css" rel="stylesheet">
+    <link href="../estilo.css" rel="stylesheet">
+    <link href="../public/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
 
     <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script> 
@@ -22,7 +23,6 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     
   </head>
   <body>
@@ -50,7 +50,7 @@
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" id="formularioMenu" data-toggle="dropdown" area-haspopup="true" area-expanded="false">Formulários</a>
             <div class="dropdown-menu">
-              <a href="funcoes/matriculas.php" class="dropdown-item text-dark">Matrícula</a>
+              <a href="matriculas.php" class="dropdown-item text-dark">Matrícula</a>
               <a href="#" class="dropdown-item text-dark">Rematrícula</a>
               <a href="#" class="dropdown-item text-dark">Lista</a>
             </div>
@@ -71,19 +71,19 @@
             </ol>
             <div id="banners-mobile" class="carousel-slide" role="listbox">
               <div class="carousel-item active">
-                <img src="imagens/carrocel1.jpg" class="d-block w-100 img-responsive" alt="Banner 1">
+                <img src="../imagens/carrocel1.jpg" class="d-block w-100 img-responsive" alt="Banner 1">
                 <div  class="carousel-caption d-none d-md-block">
                   <p class="lead carousel-legend" style="color: white">Ensino regular</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="imagens/carrocel2.jpg" class="d-block w-100 img-responsive" alt="Banner 3">
+                <img src="../imagens/carrocel2.jpg" class="d-block w-100 img-responsive" alt="Banner 3">
                 <div class="carousel-caption d-none d-md-block">
                   <p class="lead carousel-legend" style="color: white">Assistência</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="imagens/carrocel3.jpg" class="d-block w-100 img-responsive" alt="Banner 5">
+                <img src="../imagens/carrocel3.jpg" class="d-block w-100 img-responsive" alt="Banner 5">
                 <div class="carousel-caption d-none d-md-block">
                   <p class="lead carousel-legend" style="color: white">Crianças Felizes</p>
                 </div>
@@ -126,10 +126,10 @@
           <div class="row">
 
             <!-- single course -->
-            <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="col-md-3 col-6">
 
               <div class="card box-shadow mt-4 bg-transparent border-primary">
-                <img class="card-img-top" src="./imagens/img1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="../imagens/img1.jpg" alt="Card image cap">
                 <div class="card-body">
                   <p class="card-text" style="max-height: 130px">O educandário conta com ação social, você não paga mensalidade para deixar seus filhos nele, e dispõe de várias atividades educativas.</p>
                   <div class="card-footer bg-transparent">
@@ -142,12 +142,11 @@
               </div>            
 
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="col-md-3 col-6">
              <div class="card  box-shadow mt-4 bg-transparent border-primary">
-              <img class="card-img-top" src="./imagens/img2.jpg" alt="Card image cap">
+              <img class="card-img-top" src="../imagens/img2.jpg" alt="Card image cap">
               <div class="card-body">
                 <p class="card-text">As crianças têm diversas atividades de lazer, para passarem o tempo e se divertirem, tudo com bastante qualidade.</p>
-
                 <div class="card-footer bg-transparent">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-primary">Ver mais</button>
@@ -158,10 +157,10 @@
             </div>   
 
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="col-md-3 col-6">
 
             <div class="card box-shadow mt-4 bg-transparent border-primary">
-              <img class="card-img-top" src="./imagens/img3.jpg" alt="Card image cap">
+              <img class="card-img-top" src="../imagens/img3.jpg" alt="Card image cap">
               <div class="card-body">
                 <p class="card-text">O educandário também oferece assistência, não se preocupe com problemas, iremos sempre lhes informar sobre qualquer coisa.</p>
                 <div class="card-footer bg-transparent">
@@ -174,9 +173,9 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="col-md-3 col-6">
             <div class="card box-shadow  mt-4 bg-transparent border-primary">
-              <img class="card-img-top" src="./imagens/img4.jpg" alt="Card image cap">
+              <img class="card-img-top" src="../imagens/img4.jpg" alt="Card image cap">
               <div class="card-body">
                 <p class="card-text">Os professores são super dedicados, sempre dão o máximo de atenção ao seu filho, contribuindo para o seu aprendizado e crescimento.</p>
                 <div class="card-footer bg-transparent">
@@ -255,7 +254,7 @@
 </div>         
 </section>
 
-<?php include 'funcoes/footer.php'; ?>
+<?php include 'footer.php'; ?>
 
 </body>
 </html>
