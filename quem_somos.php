@@ -56,6 +56,7 @@
       </ul>          
     </div>
   </nav> <!--nav-->
+  
 
   <div class="capa">
     <h1 class="text-center">Quem Somos!</h1>
