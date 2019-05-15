@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Quem Somos</title>
-  <link rel="icon"  href="imagens/logo.png">
+  <link rel="icon"  href="../imagens/logo.png">
 
   <!-- Bootstrap -->
-  <link href="estilo.css" rel="stylesheet">
+  <link href="../public/css/estilo.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
 
   <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script> 
@@ -48,7 +48,7 @@
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" id="formularioMenu" data-toggle="dropdown" area-haspopup="true" area-expanded="false">Formulários</a>
           <div class="dropdown-menu">
-            <a href="funcoes/matriculas.php" class="dropdown-item text-dark">Matrícula</a>
+            <a href="matriculas.php" class="dropdown-item text-dark">Matrícula</a>
             <a href="#" class="dropdown-item text-dark">Rematrícula</a>
             <a href="#" class="dropdown-item text-dark">Lista</a>
           </div>
@@ -70,14 +70,14 @@
 
         <div class="row albuns">
           <div class="col-md-3 ">
-            <img src="imagens/freiras1.jpg" class="img img-responsive img-rounded">          
+            <img src="../imagens/freiras1.jpg" class="img img-responsive img-rounded">          
           </div>
 
         </div>
         
         <div class="row albuns">
           <div class="col-md-6">
-            <img src="imagens/crecheantiga.jpg" class="img img-responsive img-rounded">          
+            <img src="../imagens/crecheantiga.jpg" class="img img-responsive img-rounded">          
           </div>  
         </div>
 
@@ -92,7 +92,7 @@
     </div>
 
   </div>
-  <?php include 'funcoes/footer.php'; ?>
+  <?php include 'footer.php'; ?>
 
 </body>
 </html>

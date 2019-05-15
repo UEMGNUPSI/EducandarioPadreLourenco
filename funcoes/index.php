@@ -9,27 +9,20 @@
     <link rel="icon"  href="../imagens/logo.png">
 
     <!-- Bootstrap -->
-    <link href="../estilo.css" rel="stylesheet">
+    <link href="../public/css/estilo.css" rel="stylesheet">
+    <!-- font awesomes - icones -->
     <link href="../public/css/all.min.css" rel="stylesheet">
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
 
     <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script> 
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
     
   </head>
   <body>
 
-    <nav class="navbar fixed-top navbar-inverse navbar-transparente  navbar-dark navbar-expand-lg">
+    <nav class="navbar fixed-top navbar-transparente  navbar-dark navbar-expand-lg">
       <a href="#" class="navbar-brand">
-        <span class="img-logo">Padre Lourenço</span>
+        <img src="../imagens/logo.png" alt="some text" width=60 height=40>
       </a>         
       <!--Botão toggle-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="margin-right: 15px">
@@ -58,11 +51,11 @@
         </ul>          
       </div>
     </nav> <!--nav-->
-    <div class="capa img-responsive">
+    <div class="capa">
 
       <div class="texto-capa">
         <h1>Educandário Padre Lourenço</h1>
-        <div class="container     padding-0 banners-home">
+        <div class="container">
           <div id="myCarousel2" class="carousel slide carousel-fade" data-ride="carousel" style="border:1px solid #000;">
             <ol class="carousel-indicators">
               <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
@@ -206,18 +199,18 @@
          <h2>Contato:</h2>
          <br>
 
-          <h4 style="font-size: 20px">Endereço:</h4>
-          <p>Rua Silviano Brandão Nº 935, Princesa Isabel, Frutal-MG</p>
-          <h4 style="font-size: 20px">Horário de Funcionamento:</h4>
-          <p>Segunda a Sexta das 07h às 18h30min</p>
-          <h4 style="font-size: 20px">Telefone:</h4>
-          <p>Fax: (34) 3421-8924</p>
-          <h4 style="font-size: 20px">E-mail:</h4>
-          <p>educandariopadrelourenco@hotmail.com</p>
-        
-      </div>
+         <h4 style="font-size: 20px">Endereço:</h4>
+         <p>Rua Silviano Brandão Nº 935, Princesa Isabel, Frutal-MG</p>
+         <h4 style="font-size: 20px">Horário de Funcionamento:</h4>
+         <p>Segunda a Sexta das 07h às 18h30min</p>
+         <h4 style="font-size: 20px">Telefone:</h4>
+         <p>Fax: (34) 3421-8924</p>
+         <h4 style="font-size: 20px">E-mail:</h4>
+         <p>educandariopadrelourenco@hotmail.com</p>
 
-      <div class="col-md-6 text-center">
+       </div>
+
+       <div class="col-md-6 text-center">
         <div id="mapid" style="width: 100%px; height: 400px;" class="mt-5"></div>
         <script>
           var mymap = L.map('mapid').setView([-20.034149989763, -48.940998652577], 15);
